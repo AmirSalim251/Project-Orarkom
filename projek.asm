@@ -1,9 +1,9 @@
 ;-----------------------------------------------------------------------
-; Kelompok : 4		                                                    |
+; Kelompok : 4		                                                |
 ; Nama 	   :    1. Amir Salim(140810210015)                             |
-;	            2. Muhammad Fauzan Azzhima(140810210041)                |
-;	            3. Ibrahim Dafi iskandar(140810210039)                  |
-; Kelas    : A					                                        |
+;	            2. Muhammad Fauzan Azzhima(140810210041)            |
+;	            3. Ibrahim Dafi iskandar(140810210039)              |
+; Kelas    : A					                        |
 ;-----------------------------------------------------------------------
 
 
