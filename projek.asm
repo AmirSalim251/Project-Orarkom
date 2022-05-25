@@ -1,9 +1,9 @@
 ;-----------------------------------------------------------------------
-; Kelompok : 4		                                                |
+; Kelompok : 4		                                                    |
 ; Nama 	   :    1. Amir Salim(140810210015)                             |
-;	            2. Muhammad Fauzan Azzhima(140810210041)            |
-;	            3. Ibrahim Dafi iskandar(140810210039)              |
-; Kelas    : A					                        |
+;	            2. Muhammad Fauzan Azzhima(140810210041)                |
+;	            3. Ibrahim Dafi iskandar(140810210039)                  |
+; Kelas    : A					                                        |
 ;-----------------------------------------------------------------------
 
 
@@ -71,7 +71,9 @@ input_pil:                                  ;Label input_pil
 ;============================================================== DECIMAL -> BINARY =======================================================================================================
     
 ask_1:                                      ;label ask_1 (input string untuk meminta input user bilangan decimal)
-    write_string newline                    ;Print string untuk baris baru / '\n'
+    write_string newline                     ;Print string untuk baris baru / '\n'
+    write_string keda1                      ;Print header
+    write_string newline                      ;Print string untuk baris baru / '\n'
     write_string inputDec                   ;Print sting untuk meminta user menginput bilangan decimal untuk dikonversi
 
 ked_1: 
@@ -162,6 +164,8 @@ print_bin:                                  ;Labael print_bin
 ;======================================================== BINARY -> DECIMAL =================================================================================================================================
 
 ask_2:                                      ;Label ask_2 
+write_string newline                        ;Print string untuk baris baru / '\n'
+write_string keda2                          ;Print string untuk header
 write_string newline                        ;Print string untuk baris baru / '\n'
 write_string inputBiner                     ;Print sting untuk meminta user menginput bilangan binary untuk dikonversi
 
@@ -301,11 +305,11 @@ print:					                    ;Label print
 
 section .data                                                                                   ;Section untuk menyimpan data
 
-pembukaan : db  "---- Decimal <-> Binary----- $",                                               ;Label pembukaan berisi string
+pembukaan : db  "=== Decimal <-> Binary === $",                                               ;Label pembukaan berisi string
 pil1 : db  "1.Decimal Ke binary $",                                                             ;Label pil1 berisi string                                                                              ;Label tes berisi string
 pil2 : db  "2.Binary Ke decimal $",                                                             ;Label pil2 berisi string 
 pil3 : db  "3.Keluar program $",                                                                ;Label pil3 berisi string 
-Thank : db  "---Terima Kasih telah menggunakan Program--- $",                                   ;Label Thank berisi string 
+Thank : db  "=== Terima Kasih telah menggunakan Program === $",                                   ;Label Thank berisi string 
 hasil : db  "Hasil Konversi : $",                                                               ;Label hasil berisi string 
 input : db  " Input salah $",                                                                   ;Label input berisi string 
 ask : db  "Operasi apa yang ingin dilakukan ? $",                                               ;Label ask berisi string 
@@ -316,6 +320,6 @@ max_2: db "untuk input biner maximal 16 digit $",                               
 max_3: db "jika lebih konversi tidak sesuai! $",                                                ;Label max_3 berisi string 
 inputDec: db "Masukkan bilangan desimal yang ingin di konversi  ... $",                         ;Label inputDec berisi string 
 inputBiner: db "Masukkan bilangan biner yang ingin di konversi ... $",                          ;Label inputBiner berisi string 
-keda1 : db  "--Decimal->binary-- $",                                                            ;Label keda1 berisi string 
-keda2 : db  "--Decimal<-binary-- $",                                                            ;Label keda2 berisi string 
+keda1 : db  "=== Decimal -> binary === $",                                                            ;Label keda1 berisi string 
+keda2 : db  "=== Decimal <- binary === $",                                                            ;Label keda2 berisi string 
 newline:    db 0xD,0xA,"$"                                                                      ;Label newline berisi string 
